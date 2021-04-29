@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <link rel="stylesheet" href="css/calc.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon-16x16.png">
+    <script src="js/calc.js" ></script>
+
+</head>
+<body>
+        <!-- CABEÇALHO -->
+    <header>
+        <div id="cabecalho">
+
+            <!-- Logo topo -->
+            <div id="logotop">
+                <img src="imagens/soin.png" alt="">
+            </div>
+            
+            <!-- Menu -->
+                <div id="menu">
+                    <a href="index.html">Home</a>
+                    <a href="calc.html">Calculadora</a>
+                    <a href="conversaoMoeda.html">Currency</a>
+                    <a href="cadastro.html">Cadastre-se</a>
+
+                </div>
+
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main id="calcMain">
+        <h2>Calculadoras</h2>
+        <div id="apareceButton">
+            <button class="apareceButton" onclick="apareceCalcComum()">Calculadora Simples</button>
+
+            <button class="apareceButton"  onclick="apareceCalcCient()">Calculadora científica</button>
+        </div>
+        <div id="container">
+            
+            <!-- calculadora simples -->               
+            <div id="calculadora1">
+                <div id="tela">
+                    <input type="text" name="visor" id="visor">
+                </div>               
+                <form id="teclado">
+                    <input id="button" type="button" value="1" onclick="unindo(this);">
+                    <input id="button" type="button" value="2" onclick="unindo(this);">
+                    <input id="button" type="button" value="3" onclick="unindo(this);">
+                    <input id="button" type="button" value="+" onclick="unindo(this);">
+                    <input id="button" type="button" value="4" onclick="unindo(this);">
+                    <input id="button" type="button" value="5" onclick="unindo(this);">
+                    <input id="button" type="button" value="6" onclick="unindo(this);">
+                    <input id="button" type="button" value="-" onclick="unindo(this);">
+                    <input id="button" type="button" value="7" onclick="unindo(this);">
+                    <input id="button" type="button" value="8" onclick="unindo(this);">
+                    <input id="button" type="button" value="9" onclick="unindo(this);">
+                    <input id="button" type="button" value="/" onclick="unindo(this);">
+                    <input id="button" type="button" value="0" onclick="unindo(this);">
+                    <input id="button" type="button" value="C" onclick="limpaTela();">
+                    <input id="button" type="button" value="=" id="igual" onclick="calcula();">
+                    <input id="button" type="button" value="*" onclick="unindo(this);">
+                </form>
+                
+            </div>
+           
+           
+            <!-- calculadora científica -->
+            <div id="calculadora2">
+                <div id="tela">
+                    <input type="text" name="visor" id="visor2">
+                </div>
+                <form id="teclado2">
+                    <input id="button2" type="button" value="1" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="2" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="3" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="+" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="π" onclick="pi(this);">
+                    <input id="button2" type="button" value="4" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="5" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="6" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="-" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="^2" onclick="aoQuadrado();">
+                    <input id="button2" type="button" value="7" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="8" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="9" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="/" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="^3" onclick="aoCubo(this);">
+                    <input id="button2" type="button" value="0" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="C" onclick="limpaTela2();">
+                    <input id="button2" type="button" value="=" onclick="calcula2();">
+                    <input id="button2" type="button" value="*" onclick="unindo2(this);">
+                    <input id="button2" type="button" value="√" onclick="raizQuadrada(this);">
+                </form>
+                
+            </div>
+           
+        </div>
+     
+         
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer">
+            <!-- Logo -->
+            <div id="logo">
+                <img src="imagens/soin3.png" alt="">
+            </div>
+
+            <!-- Endereço -->
+            <div id="address">
+                <p>Rua dos Alfeneiros 4, Little Whinging, Surrey.</p>
+            </div>
+
+            <!-- Links -->
+            <div id="links">
+                <a href="#">Quem somos</a>
+                <a href="#">Calculadora</a>
+                <a href="#">Currency</a>
+                <a href="#">Política de Privacidade</a>
+                <!-- Social -->
+                <a href="#">
+                    <img id="insta" src="imagens/insta.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="linkedin" src="imagens/linkedin.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="wpp" src="imagens/wpp.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Social -->
+            <div id="social">
+                <!-- <img src="imagens/insta.svg" alt=""> -->
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+            </div>
+
+            <!-- Divs vazias -->
+            <div id="boxVazia1"></div>
+            <div id="boxVazia_2"></div>
+            <div id="boxVazia_3"></div>
+
+        </div>
+    </footer>
+        
+
+        
+</body>
+</html>

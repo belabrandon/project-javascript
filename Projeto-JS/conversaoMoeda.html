@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/conversaoMoeda.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/conversaoMoeda.js"></script>
+    <title>Conversor de moedas</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div id="cabecalho">
+            <!-- Logo topo -->
+            <div id="logotop">
+                <img src="imagens/soin.png" alt="">
+            </div>
+            <!-- Menu -->
+            <div id="menu">
+                <a href="index.html">Home</a>
+                <a href="calc.html">Calculadora</a>
+                <a href="conversaoMoeda.html">Currency</a>
+                <a href="cadastro.html">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+    <!-- CONTENT -->
+    <main>
+        <h2>Conversor de moedas</h2>
+        <form>
+            <div>
+                <label for="valorConverter">Valor a ser convertido:</label>
+                <input type="text" required="required" id="valorConverter">
+            </div>
+            <div class="campoOption">
+                <!-- Valor de  -->
+                <label for="deMoedas">De:</label>
+                <select id="deMoedas" class="campoInput">
+                    <option value="">Escolha a moeda</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="CAD">Dólar Canadense</option>
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">Libra</option>
+                    <option value="ARS">Peso Argentino</option>
+                </select>
+            </div>
+                <div class="campoOption">
+                <!-- Valor para -->
+                <label for="paraMoedas">Para:</label>
+                <select id="paraMoedas" class="campoInput">
+                    <option value="">Escolha a moeda</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="CAD">Dólar Canadense</option>
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">Libra</option>
+                    <option value="ARS">Peso Argentino</option>
+                </select>
+            </div>
+            <button type="button" onclick="converter()" class="campoInput">Converter</button>
+            <p id="resultado"></p>
+            <!-- <p>Data de cotação: 27/04/2021 </p> -->
+        </form>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer">
+            <!-- Logo -->
+            <div id="logo">
+                <img src="imagens/soin3.png" alt="">
+            </div>
+
+            <!-- Endereço -->
+            <div id="address">
+                <p>Rua dos Alfeneiros 4, Little Whinging, Surrey.</p>
+            </div>
+
+            <!-- Links -->
+            <div id="links">
+                <a href="index.html">Quem somos</a>
+                <a href="#">Calculadora</a>
+                <a href="conversaoMoeda.html">Currency</a>
+                <a href="cadastro.html">Política de Privacidade</a>
+
+                <!-- Social -->
+                <a href="#">
+                    <img id="insta" src="imagens/insta.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="linkedin" src="imagens/linkedin.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="wpp" src="imagens/wpp.svg" alt="">
+                </a>
+                <!--P.S.: Girls, eu preciso de vocês linkem aqui a página que cada uma fez e após todos os ajustes me mandem o arquivo. OBrigado <3 -->
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

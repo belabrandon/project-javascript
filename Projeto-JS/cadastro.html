@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="js/cadastro.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<script src=""></script>
+<style></style>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div id="cabecalho">
+
+            <!-- Logo topo -->
+            <div id="logotop">
+                <img src="imagens/soin.png" alt="">
+            </div>
+            
+            <!-- Menu -->
+            <div id="menu">
+                <a href="index.html">Home</a>
+                <a href="calc.html">Calculadora</a>
+                <a href="conversaoMoeda.html">Currency</a>
+                <a href="cadastro.html">Cadastre-se</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main id="cadastroMain">
+        <div id="divEsquerda">
+            <form  name="cad" class="formCad">
+                <h2 >Cadastre-se</h2>
+                
+                
+                <div>
+                    <label for="nome">Nome:</label> <br/>
+                    <input type="text" required="" onblur="maiusc(this)"  placeholder="Digite o nome completo " name="nome"  id="nome">
+                   
+                </div>
+                
+                <div>
+                    <label for="cpf">CPF:</label><br/>
+                    <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite no formato 111.222.333-44" onmouseout="formataCPF(this)" onblur="return valida()" placeholder="Exemplo: 111.222.333-44 ">
+                    <div id="cpfTxt"></div>        
+                </div>
+          
+                <div>
+                     <label for="nascimento">Data Nascimento</label><br/>
+                     <input type="date" name="nascimento" id="nascimento" onblur="return validadata()">
+                     <div id="dataTxt"></div>
+                </div>
+    
+                <div>
+                    <label for="email">E-mail:</label><br/>
+                    <input type="text" name="email" id="email"  onblur="validacaoEmail(cad.email)" >
+                    <div id="msgemail"></div>
+                    
+                 
+                </div>
+    
+    
+    
+                <div>
+                    <label for="gender">Genêro:</label><br/>
+                    <select name="gender" id="gender">
+                        <option value="Empty"></option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Não informado">Não informado</option>
+                    </select>
+                </div>
+                
+                
+                <div class="button">
+    
+                    <input type="button"  onclick="frase()" value="Cadastrar" />
+                </div>
+                <div id="resultCad">
+
+                </div>
+            </form>
+
+        </div>        
+        
+        <div id="divDireita">
+            <div>
+                
+                <figure ><img src="https://cadastro.xpi.com.br/images/xp/first-steps.svg" width="70" height="79" alt="Primeiros passos." class="jss300" style="margin-bottom: 26px;"></figure>
+                <h3>Você está dando os primeiros passos para abrir uma conta na Soul Invest!</h3>
+
+            </div>
+
+            
+            
+
+            
+
+        </div>
+
+        
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer">
+            <!-- Logo -->
+            <div id="logo">
+                <img src="imagens/soin3.png" alt="">
+            </div>
+
+            <!-- Endereço -->
+            <div id="address">
+                <p>Rua dos Alfeneiros 4, Little Whinging, Surrey.</p>
+            </div>
+
+            <!-- Links -->
+            <div id="links">
+                <a href="#">Quem somos</a>
+                <a href="#">Calculadora</a>
+                <a href="#">Currency</a>
+                <a href="#">Política de Privacidade</a>
+
+                <!-- Social -->
+                <a href="#">
+                    <img id="insta" src="imagens/insta.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="linkedin" src="imagens/linkedin.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="wpp" src="imagens/wpp.svg" alt="">
+                </a>
+                <!--P.S.: Girls, eu preciso de vocês linkem aqui a página que cada uma fez e após todos os ajustes me mandem o arquivo. OBrigado <3 -->
+            </div>
+
+            <!-- Social -->
+            <!-- <div id="social">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+            </div> -->
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">  
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon-16x16.png">
+    <script src="js/script.js"></script>
+    <!-- Biblioteca JQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div id="cabecalho">
+
+            <!-- Logo topo -->
+            <div id="logotop">
+                <img src="imagens/soin.png" alt="">
+            </div>
+            
+            <!-- Menu -->
+                <div id="menu">
+             
+                    <a href="index.html" class="acessibilidade">Home</a>
+                    <a href="calc.html"class="acessibilidade">Calculadora</a>
+                    <a href="conversaoMoeda.html" class="acessibilidade">Currency</a>
+                    <a href="cadastro.html" class="acessibilidade">Cadastre-se</a>
+                    <button id="btn1" onClick="fonte('a')">A+</button>
+                    <button id="btn2" onClick="fonte('d')">A-</button>
+
+                    <select id="btn3" onclick="setBodyAttr('bgColor', this.options[this.selectedIndex].value);">
+                        <option value="#eee" >Claro</option>
+                        <option value="#333">Escuro</option>
+
+                        <!-- Script muda cor do fundo -->
+                        <script>
+                            function setBodyAttr(attr, value) {
+                                if (document.body) eval('document.body.' + attr + '="' + value + '"');
+                                
+                            }
+                        </script>
+                    </select>
+
+                </div>
+
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <h1>Soul Invest</h1>
+        <div id="banner">
+            <img src="imagens/banner.png" alt="">
+        </div>
+
+        <!-- ABOUT -->
+        <div id="content">
+            <div id="box1">
+                <h2 class="acessibilidade">Quem somos</h2>
+            <p class="acessibilidade">Somos a Soul Invest, uma equipe de desenvolvedoras Full Stack Júniors, formada por; Helena Dittert, Juliana Fabricio, Maria de Farias e Tulani da Silva. Trabalhamos juntas para criar quatro páginas neste projeto, onde oferecemos uma cálculadora normal e científica, conversor de moedas e formulário de inscrição, utilizando HTML5, CSS3 e JavaScript. Somos alunas da Edtech brasileira SoulCode Academy.</p>
+            </div>
+            <div id="box2">
+                <h2 class="acessibilidade">Helena Dittert</h2>
+                <h5 class="acessibilidade">Linkedin:</h5>
+                <a href="https://www.linkedin.com/in/helena-dittert/" target="blank"><img src="imagens/helena-perfil-removebg-preview.png" alt="" class="ico_linkedin" title="Clique para acessar o meu Linkedin"></a>
+
+            </div> 
+            <div id="box3">
+                <h2 class="acessibilidade">Juliana Fabricio</h2>
+                <h5 class="acessibilidade">Linkedin:</h5>
+                <a href="https://www.linkedin.com/in/juliana-fabricio-rodrigues/" target="blank"><img src="imagens/foto-perfil-juliana1-removebg-preview.png" alt="" class="ico_linkedin" title="Clique para acessar o meu Linkedin"></a>
+
+            </div>
+            <div id="box4">
+                <h2 class="acessibilidade">Maria de Farias</h2>
+                <h5 class="acessibilidade">Linkedin:</h5>
+                <a href="https://www.linkedin.com/in/mariadefarias/" target="blank"><img src="imagens/maria-perfil-removebg-preview.png" alt="" class="ico_linkedin" title="Clique para acessar o meu Linkedin"></a>
+
+            </div>
+            <div id="box5">
+                <h2 class="acessibilidade">Tulani da Silva</h2>
+                <h5 class="acessibilidade">Linkedin:</h5>
+                <a href="https://www.linkedin.com/in/tulani-concei%C3%A7%C3%A3o-da-silva-aaa01013a/" target="blank"><img src="imagens/tulani-perfil-removebg-preview.png" alt="" class="ico_linkedin" title="Clique para acessar o meu Linkedin"></a>
+      
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer">
+            <!-- Logo -->
+            <div id="logo">
+                <img src="imagens/soin3.png" alt="">
+            </div>
+
+            <!-- Endereço -->
+            <div id="address">
+                <p class="acessibilidade">Rua dos Alfeneiros 4, Little Whinging, Surrey.</p>
+            </div>
+
+            <!-- Links -->
+            <div id="links">
+                <a href="#" class="acessibilidade">Quem somos</a>
+                <a href="#" class="acessibilidade">Calculadora</a>
+                <a href="#" class="acessibilidade">Currency</a>
+                <a href="#" class="acessibilidade">Política de Privacidade</a>
+                <!-- Social -->
+                <a href="#">
+                    <img id="insta" src="imagens/insta.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="linkedin" src="imagens/linkedin.svg" alt="">
+                </a>
+                <a href="#">
+                    <img id="wpp" src="imagens/wpp.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+<!-- 
+    ATRIBUIÇÕES
+    
+Helena => Responsável pela página Conversor de moedas (HTM, CSS, JS)
+Juliana => Responsável pela página Cadastro (HTM, CSS, JS)
+Maria => Responsável pela página Principal + Menu e Rodapé (HTM, CSS, JS)
+Tulani => Responsável pela página Calculadoras (HTM, CSS, JS) 
+-->
+
+</html>
